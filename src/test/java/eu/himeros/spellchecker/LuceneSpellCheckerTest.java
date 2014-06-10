@@ -52,7 +52,7 @@ public class LuceneSpellCheckerTest extends TestCase{
      */
     public void testLuceneSpellChecker(){
         //assertTrue( true );
-        System.setProperty("eu.himeros.spellcheckers","grc@/home/federico/lab009/test-ocr/lucene-grc");
+        System.setProperty("eu.himeros.spellcheckers","grc@/home/luca/lab009/test-ocr/lucene-grc");
         UpperCaseSimEvaluator.setResourceName("eu/himeros/resources/transcoders/low2up.txt");
         LuceneSpellChecker.init(System.getProperty("eu.himeros.spellcheckers"));
         String[] results=LuceneSpellChecker.spellcheck("καβαΣις","grc",5);
